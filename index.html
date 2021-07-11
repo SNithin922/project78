@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>
+            My Family Book
+        </title>
+    </head>
+    <body style="text-align: center;">
+        <h1>
+            My Family Book
+        </h1>
+        <img src="https://image.freepik.com/free-vector/big-family-meeting_74855-5220.jpg" width="35%" id="members_of_family_image">
+        <h4 id="members_of_family_name"></h4>
+         <button onclick="update();">Next</button>
+         <script>
+             var image=["https://image.freepik.com/free-vector/big-family-meeting_74855-5220.jpg",
+            "https://cdn.iconscout.com/icon/premium/png-256-thumb/me-2002817-1686947.png",
+        "https://www.kindpng.com/picc/m/164-1648741_mom-icon-png-customer-icon-transparent-png-png.png",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5VyPyk4Rp_kBQc-EF0HmR6gJ_qdOY7aGfa3jtySy3b-LbKPy60GbZbvk6b84WEOsCKcQ&usqp=CAU",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyCfS2CRGaqFT6lnMGusdRyBndBJnC9LPHx8Bej99QxXpZmxHKPsjkNBCwZaHgE-NIrsI&usqp=CAU"];
+           var name2=["Family Book","S Nithin","R.Sita my mom","S.Sruthi my sister","S.Sankaralingam my dad"];
+           var i = 0;
+           function update() 
+           {
+           i++;
+         var members_of_family_in_array = 5;
+         if(i>members_of_family_in_array)
+         {
+             i=0;
+         }
+         var updateimage = image[i];
+         var updatename = name2[i];
+         document.getElementById("members_of_family_image").src = updateimage;
+         document.getElementById("members_of_family_name").innerHTML = updatename;
+           }
+         </script>
+    </body>
+</html>
